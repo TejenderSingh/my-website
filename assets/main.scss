@@ -1,0 +1,130 @@
+html {
+  box-sizing: border-box;
+  font-family: "Mosk-normal", Helvetica, sans-serif;
+  font-size: 16px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+@font-face {
+  font-family: "Mosk-bold";
+  src: url("/fonts/Mosk-Bold-700.ttf");
+}
+@font-face {
+  font-family: "Mosk-extra-bold";
+  src: url("/fonts/Mosk-extra-Bold-800.ttf");
+}
+@font-face {
+  font-family: "Mosk-medium";
+  src: url("/fonts/Mosk-medium-500.ttf");
+}
+@font-face {
+  font-family: "Mosk-normal";
+  src: url("/fonts/Mosk-normal-400.ttf");
+}
+@font-face {
+  font-family: "Mosk-semi-bold";
+  src: url("/fonts/Mosk-semi-Bold-600.ttf");
+}
+@font-face {
+  font-family: "Mosk-thin";
+  src: url("/fonts/Mosk-thin-100.ttf");
+}
+@font-face {
+  font-family: "Mosk-ultra-bold";
+  src: url("/fonts/Mosk-ultra-bold-900.ttf");
+}
+
+h1 {
+  font-family: "Mosk-ultra-bold", Helvetica, sans-serif;
+}
+h2,
+h3,
+h4 {
+  font-family: "Mosk-extra-bold", Helvetica, sans-serif;
+}
+p,
+a {
+  font-family: "Mosk-normal", Helvetica, sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  vertical-align: baseline;
+}
+a {
+  text-decoration: none;
+}
+:root {
+  // FONT FAMILY
+  --font-thin: "Mosk-thin", Helvetica, sans-serif;
+  --font-normal: "Mosk-normal", Helvetica, sans-serif;
+  --font-bold: "Mosk-bold", Helvetica, sans-serif;
+  --font-extra-bold: "Mosk-extra-bold", Helvetica, sans-serif;
+  --font-ultra-bold: "Mosk-ultra-bold", Helvetica, sans-serif;
+
+  // COLOURS.CAFE #327
+  // COLOURS
+
+  --main-light: #f5f5f1;
+  --sec-light: #f2e9db;
+  --main-dark: #62a8e5;
+  --main-darker: #4d495b;
+  --main-darkest: #48403c;
+  --main-accent: #ffc867;
+  // --sec-accent: #62a8e5;
+
+  // navbar
+  --nav-bg: var(--main-darker);
+  --nav-color: var(--main-light);
+  --nav-active-color: var(--main-accent);
+
+  // about
+  --about-font-color: var(--main-darkest);
+  --about-social-color: var(--main-darker);
+
+  // skills & work
+  --card-title-bg: var(--main-light);
+  --card-font-color: var(--main-darkest);
+  --card-tag-bg: var(--main-darker);
+
+  // cv
+  --cv-font-color: var(--main-darkest);
+
+  //Error page
+  --error-font-color: var(--main-darkest);
+}
+.container {
+  min-height: calc(100vh - 118px);
+  margin-top: 60px;
+}
+.wrapper {
+  // border: 2px solid #c0392b;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  max-width: 1280px;
+}
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+.page-enter {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+.page-leave-to {
+  opacity: 0;
+  transform: translateY(20px);
+}
+.page-enter-to,
+.page-leave {
+  opacity: 1;
+  transform: translateY(0px);
+}

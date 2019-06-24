@@ -1,0 +1,28 @@
+{
+  "name": "my-personal-website",
+  "version": "1.0.0",
+  "description": "my personal website",
+  "author": "TejenderSingh",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.15",
+    "@fortawesome/free-brands-svg-icons": "^5.7.2",
+    "@fortawesome/free-solid-svg-icons": "^5.7.2",
+    "@fortawesome/vue-fontawesome": "^0.1.5",
+    "@nuxtjs/style-resources": "^0.1.2",
+    "cross-env": "^5.2.0",
+    "node-sass": "^4.11.0",
+    "nuxt": "^2.8.1",
+    "nuxt-fontawesome": "^0.4.0",
+    "sass-loader": "^7.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}
