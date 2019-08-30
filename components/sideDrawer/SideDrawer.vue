@@ -34,8 +34,7 @@ export default {
   top: 0;
   left: 0;
   height: 100vh;
-  width: 70vw;
-  max-width: 400px;
+  width: 100vw;
   z-index: 99;
   background: var(--main-darker);
   display: flex;
