@@ -1,7 +1,7 @@
 <template>
   <a :href="cardUrl" target="_blank" class="work">
     <div class="work-card">
-      <img :src="`/images/${cardImg}.png`" alt="project" class="work-card__img">
+      <img :src="`/images/${cardImg}.png`" alt="project" loading="lazy" class="work-card__img" />
       <div class="work-card__text">
         <h2>{{cardTitle}}</h2>
         <div class="tags">

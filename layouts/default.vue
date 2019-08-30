@@ -1,13 +1,9 @@
 <template>
   <div>
-    <Header :drawerState="sideDrawerOpen" @toggle-drawer="sideDrawerOpen = !sideDrawerOpen"/>
-    <SideDrawer
-      v-show="sideDrawerOpen"
-      :show="sideDrawerOpen"
-      @sideNavClose="sideDrawerOpen = false"
-    />
-    <nuxt/>
-    <Footer/>
+    <Header :drawerState="sideDrawerOpen" @toggle-drawer="sideDrawerOpen = !sideDrawerOpen" />
+    <SideDrawer :show="sideDrawerOpen" @sideNavClose="sideDrawerOpen = false" />
+    <nuxt />
+    <Footer />
   </div>
 </template>
 

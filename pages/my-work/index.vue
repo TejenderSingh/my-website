@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <PageHeader name="My work"/>
+    <PageHeader name="My work" />
     <div class="wrapper work__wrapper">
       <WorkCard
         v-for="card in cardDetails"

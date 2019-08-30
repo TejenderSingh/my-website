@@ -1,7 +1,7 @@
 <template>
   <div class="skill-card">
     <figure>
-      <img :src="`/images/${imgSrc}.png`" alt="html" class="skill-card__img">
+      <img :src="`/images/${imgSrc}.png`" alt="html" loading="lazy" class="skill-card__img" />
     </figure>
     <p class="skill-card__text">{{imgName}}</p>
   </div>

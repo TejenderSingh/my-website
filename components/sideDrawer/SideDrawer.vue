@@ -34,14 +34,17 @@ export default {
   top: 0;
   left: 0;
   height: 100vh;
-  width: 100vw;
+  width: 70vw;
+  max-width: 400px;
   z-index: 99;
   background: var(--main-darker);
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: transform 0.25s ease-in-out;
+  transform: translateX(-100%);
   &.opened {
-    animation: fadeIn2 0.2s ease-in forwards;
+    transform: translateX(0);
   }
 
   @include medium {
@@ -68,31 +71,6 @@ export default {
         }
       }
     }
-  }
-}
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes fadeIn2 {
-  0% {
-    transform: translateX(-100%);
-  }
-  33% {
-    transform: translateX(-66%);
-  }
-  66% {
-    transform: translateX(-33%);
-  }
-  100% {
-    transform: translateX(0);
   }
 }
 </style>
