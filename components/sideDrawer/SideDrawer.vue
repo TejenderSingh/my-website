@@ -53,8 +53,7 @@ export default {
     margin: 0;
     padding: 0;
     list-style: none;
-    opacity: 0;
-    animation: fadeIn 0.2s 0.25s ease forwards;
+    opacity: 1;
     .mb-navbar__item {
       .nav__link {
         display: inline-block;
